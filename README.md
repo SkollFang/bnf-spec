@@ -29,5 +29,5 @@ Manual:
 -blocked programming implementation, recongized by brackets
 -expressions: conditional, class instance
 -tokens: ints, floats, strings, char
--call by value
+-call by reference
 -return by function declaration
