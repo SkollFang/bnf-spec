@@ -1,11 +1,11 @@
 game.init
 ---------
-- loadSprite
-- loadGif
-- loadSound
-- loadVideo
-- to
-- set
+- set <array>
+- to <index> <array>
+- loadSprite <file>
+- loadGif <file>
+- loadSound <file>
+- loadVideo <file>
 
 game.render
 -----------
@@ -13,10 +13,10 @@ game.render
 - CollapseGif(args..):
 - Sync(arg, t1, arg1, t2,...)
 - Output(args..)
-- Event(act1, act2, ..){body}
-- Action(args..){body}
-- Block{body of Events/Actions}
+- Event(act1, act2, ..) {body}
+- Action(args..) {body}
+- Block {body of Events/Actions}
 
 game.tick
 ---------
-- Scene{body of Events/Block/Actions}
+- Scene {body of Events/Block/Actions}
