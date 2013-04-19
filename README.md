@@ -7,7 +7,10 @@ Language Attributes
 -------------------
 - similar to graphical interface used in android applications
 - based off self graphical, java implementation
-- strengthes and weaknesses: similiar to self
+- strengthes and weaknesses:
+	-similiar to self
+	-easy readability
+	-long painful writability
 - simple syntax
 - semantics: java or simpler
 - BNF: methods, declarations, types, looping, terminator, 
