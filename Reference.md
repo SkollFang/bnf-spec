@@ -16,9 +16,9 @@ game.render
 - collapseGif(args..):
 - sync(arg, t1, arg1, t2,...)
 - output(args..)
-- event(act1, act2, ..) {body}
-- action(args..) {body}
-- block {body of Events/Actions}
+- event <name> (act1, act2, ..) {body}
+- action <name> (args..) {body}
+- block <name> {body of Events/Actions}
 
 game.tick
 ---------
