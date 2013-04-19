@@ -1,0 +1,15 @@
+scene game
+	set playerHit1 0
+	set playerHealth1 100
+	listen KEY_Z player1[].punch
+	listen KEY_X player1[].kick
+	listen KEY_UP_ARROW and KEY_Z player1[].highPunch
+	listen KEY_UP_ARROW and KEY_X player1[].highKick
+	listen KEY_SPACE delay KEY_X player1[].airKick
+	listen KEY_SPACE delay KEY_Z player1[].airPunch
+	listen KEY_SPACE and KEY_X player1[].jumpKick
+	listen KEY_UP_ARROW and KEY_Z during player1[].highPunch player1[].sHighPunch
+	listen KEY_Z during player1[].punch player1[].sPunch
+	listen NO_INPUT player1[].standby
+	listen KEY_Z and KEY_SPACE and KEY_UP_ARROW player1[].uppercut
+end scene

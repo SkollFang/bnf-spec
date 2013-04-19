@@ -23,4 +23,9 @@ game.render
 
 game.tick
 ---------
-- `scene {body of Events/Block/Actions}`
+- `scene <name> <body of Events/Block/Actions> end scene`
+- listen <input method> <event/action/block>
+- and:= key word used to join more than one input simultiously
+- delay:= key word used when input is alternate
+- during:= key word used with input type of an already recent event/action/block
+- <block name>.<action/event>

@@ -1,0 +1,63 @@
+block player1 []
+
+	action airKick
+		collapse(airKick1, airKick2):
+	end action
+
+	action airPunch
+		collapse(airPunch1,airPunch2):
+	end action
+
+	action highKick
+		collapse(highKick1, highKick2):
+	end action
+
+	action highPunch
+		collapse(highPunch1, highPunch2, highPunch3, highPunch4, highPunch5):
+	end action
+
+	action jumpKick
+		collapse(jumpKick1, jumpKick2, jumpKick3):
+	end action
+
+	action kick
+		collapse(kick1, kick2):
+	end action
+
+	action powerTaunt
+		collapse(powerTaunt1, powerTaunt2, powerTaunt3):
+	end action
+
+	action punch
+		collapse(punch1, punch2, punch3, punch4, punch5, punch6, punch7):
+	end action
+
+	action sHighP
+		collapse(sHighP1, sHighP2, sHighP3, sHighP4):
+	end action
+
+	action sPunch
+		collapse(sPunch1, sPunch2, sPunch3, sPunch4):
+	end action
+
+	action standby
+		collapse(standby1, standby2, standby3):
+	end action
+
+	action taunt
+		collapse(taunt1, taunt2, taunt3):
+	end action
+
+	action uppercut
+		collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7):
+	end action
+
+	event hit1
+		playerHit1++
+	end event
+
+	event damage1
+		playerHealth1 = playerHealth1 - 10
+	end event
+
+end block

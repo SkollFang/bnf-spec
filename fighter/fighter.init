@@ -1,0 +1,52 @@
+loadSprite "./airKick (1).png" as airKick1
+loadSprite "./airKick (2).png" as airKick2
+loadSprite "./airPunch (1).png" as airPunch1
+loadSprite "./airPunch (2).png" as airPunch2
+loadSprite "./highKick (1).png" as highKick1
+loadSprite "./highKick (2).png" as highKick2
+loadSprite "./highPunch (1).png" as highPunch1
+loadSprite "./highPunch (2).png" as highPunch2
+loadSprite "./highPunch (3).png" as highPunch3
+loadSprite "./highPunch (4).png" as highPunch4
+loadSprite "./highPunch (5).png" as highPunch5
+loadSprite "./jumpKick (1).png" as jumpKick1
+loadSprite "./jumpKick (2).png" as jumpKick2
+loadSprite "./jumpKick (3).png" as jumpKick3
+loadSprite "./kick (1).png" as kick1
+loadSprite "./kick (2).png" as kick2
+loadSprite "./powerTaunt (1).png" as powerTaunt1
+loadSprite "./powerTaunt (2).png" as powerTaunt2
+loadSprite "./powerTaunt (3).png" as powerTaunt3
+loadSprite "./punch (1).png" as punch1
+loadSprite "./punch (2).png" as punch2
+loadSprite "./punch (3).png" as punch3
+loadSprite "./punch (4).png" as punch4
+loadSprite "./punch (5).png" as punch5
+loadSprite "./punch (6).png" as punch6
+loadSprite "./punch (7).png" as punch7
+loadSprite "./sHighP (1).png" as sHighP1
+loadSprite "./sHighP (2).png" as sHighP2
+loadSprite "./sHighP (3).png" as sHighP3
+loadSprite "./sHighP (4).png" as sHighP4
+loadSprite "./sPunch (1).png" as sPunch1
+loadSprite "./sPunch (2).png" as sPunch2
+loadSprite "./sPunch (3).png" as sPunch3
+loadSprite "./sPunch (4).png" as sPunch4
+loadSprite "./standby (1).png" as standby1
+loadSprite "./standby (2).png" as standby2
+loadSprite "./standby (3).png" as standby3
+loadSprite "./taunt (1).png" as taunt1
+loadSprite "./taunt (2).png" as taunt2
+loadSprite "./taunt (3).png" as taunt3
+loadSprite "./uppercut (1).png" as uppercut1
+loadSprite "./uppercut (2).png" as uppercut2
+loadSprite "./uppercut (3).png" as uppercut3
+loadSprite "./uppercut (4).png" as uppercut4
+loadSprite "./uppercut (5).png" as uppercut5
+loadSprite "./uppercut (6).png" as uppercut6
+loadSprite "./uppercut (7).png" as uppercut7
+
+create playerHit1 0
+create playerHealth1 100
+export playerHit1
+export playerHealth1
