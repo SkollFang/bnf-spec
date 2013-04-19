@@ -1,3 +1,6 @@
+Keywords and contexts
+=====================
+
 game.init
 ---------
 - set <array>
@@ -9,14 +12,14 @@ game.init
 
 game.render
 -----------
-- Collapse(args..): 
-- CollapseGif(args..):
-- Sync(arg, t1, arg1, t2,...)
-- Output(args..)
-- Event(act1, act2, ..) {body}
-- Action(args..) {body}
-- Block {body of Events/Actions}
+- collapse(args..): 
+- collapseGif(args..):
+- sync(arg, t1, arg1, t2,...)
+- output(args..)
+- event(act1, act2, ..) {body}
+- action(args..) {body}
+- block {body of Events/Actions}
 
 game.tick
 ---------
-- Scene {body of Events/Block/Actions}
+- scene {body of Events/Block/Actions}
