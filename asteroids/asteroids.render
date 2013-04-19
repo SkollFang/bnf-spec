@@ -1,0 +1,21 @@
+action thrust power
+    move(ship, power, 0)
+end action
+
+action turn angle
+    rotate(ship, angle)
+end action
+
+action populate number
+    set 10 asteroids with asteroid
+    place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with asteroids
+end action
+
+event menu
+    display menu
+end event
+
+event game_lost
+    clear
+
+end event

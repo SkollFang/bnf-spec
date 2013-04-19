@@ -6,7 +6,7 @@ game.init
 - `create <name>`
 - `set <array>`
 - `to <index> <array>`
-- `loadSprite <file>`
+- `loadSprite <file> as <name>`
 - `loadGif <file>`
 - `loadSound <file>`
 - `loadVideo <file>`

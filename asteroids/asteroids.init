@@ -1,0 +1,5 @@
+loadSprite "./asteroid.png" as asteroid
+loadSprite "./menu.png" as menu
+
+create score 0
+export score

@@ -1,0 +1,13 @@
+scene asteroids
+    run menu
+    listen KEY_ENTER start game
+end scene
+
+scene game
+    set score 0
+    run populate
+    listen KEY_RIGHT_ARROW turn 10
+    listen KEY_LEFT_ARROW turn -10
+    listen KEY_UP_ARROW thrust 1
+    listen KEY_DOWN_ARROW thrust -1
+end scene
