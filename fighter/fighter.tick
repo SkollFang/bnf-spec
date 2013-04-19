@@ -1,6 +1,8 @@
 scene game
 	set playerHit1 0
 	set playerHealth1 100
+	setBackGround cityScape
+	setFloorlevel 25
 	listen KEY_Z player1[].punch
 	listen KEY_X player1[].kick
 	listen KEY_UP_ARROW and KEY_Z player1[].highPunch
@@ -12,4 +14,6 @@ scene game
 	listen KEY_Z during player1[].punch player1[].sPunch
 	listen NO_INPUT player1[].standby
 	listen KEY_Z and KEY_SPACE and KEY_UP_ARROW player1[].uppercut
+	listen KEY_RIGHT_ARROW player1[].runForward
+	listen KEY_LEFT_ARROW player1[].runBack
 end scene

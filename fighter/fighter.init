@@ -45,6 +45,18 @@ loadSprite "./uppercut (4).png" as uppercut4
 loadSprite "./uppercut (5).png" as uppercut5
 loadSprite "./uppercut (6).png" as uppercut6
 loadSprite "./uppercut (7).png" as uppercut7
+loadSprite "./runBack (1).png" as runBack1
+loadSprite "./runBack (2).png" as runBack2
+loadSprite "./runBack (3).png" as runBack3
+loadSprite "./runBack (4).png" as runBack4
+loadSprite "./runBack (5).png" as runBack5
+loadSprite "./runBack (6).png" as runBack6
+loadSprite "./runBack (7).png" as runBack7
+loadSprite "./runBack (8).png" as runBack8
+loadSprite "./runBack (9).png" as runBack9
+loadSprite "./runBack (10).png" as runBack10
+loadSprite "./runBack (11).png" as runBack11
+loadBackground "./post-apocalyptic_city.png" as cityScape
 
 create playerHit1 0
 create playerHealth1 100

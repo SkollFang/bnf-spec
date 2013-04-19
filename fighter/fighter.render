@@ -51,6 +51,14 @@ block player1 []
 	action uppercut
 		collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7):
 	end action
+	
+	action runBack
+		collapse(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11):
+	end action
+	
+	action runForward
+		collapseFlip(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11):
+	end action
 
 	event hit1
 		playerHit1++
