@@ -1,6 +1,12 @@
 <scene>        ::= scene <identifier><newline><scenebody><newline>end scene
 <scenebody>    ::= <newline>|<builtin><newline><scenebody>
 
+<action>       ::= action <arguments><newline><actionbody><newline>end action
+<arguments>    ::= <identifier>|<identifier> <arguments>
+<actionbody>   ::= <newline>|<builtin><newline><scenebody>
+
+<scenebody>    ::= <newline>|<builtin><newline><scenebody>
+
 <identifier>   ::= <identchar>|<identchar><identifier>
 <builtin>      ::= <listen>|<set>
 
