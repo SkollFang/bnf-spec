@@ -15,6 +15,17 @@ action placeShip
 	place(ship, WINDOW_WIDTH/2, WINDOW_HEIGHT/2)
 end action
 
+action Killed
+	if(ship(x,y) == aseroid(x,y))
+	{
+		lives--
+	}
+	if(lives == -1)
+	{
+		call game_lost
+	}
+end action
+
 event menu
     display menu
 end event
