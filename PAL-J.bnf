@@ -1,19 +1,26 @@
 <scene>        ::= scene <identifier><newline><scenebody><newline>end scene
 <scenebody>    ::= <newline>|<builtin><newline><scenebody>
 
-<action>       ::= action <arguments><newline><actionbody><newline>end action
-<arguments>    ::= <identifier>|<identifier> <arguments>
-<actionbody>   ::= <newline>|<builtin><newline><scenebody>
+<action>       ::= action <identifier><newline><actionbody><newline>end action|
+					action <identifier><values><newline><actionbody><newline>end action
+<values>	   ::= <literal> <values>|<literal>
+
+<actionbody>   ::= <newline>|<output><newline><actionbody>
+<output>	   ::= output(<collapse>|<identifier>):
+<collapse>	   ::= collapse(<colbody>)
+<colbody>	   ::= <identifier>, <colbady>|<identifier>|<empty> 
 
 <scenebody>    ::= <newline>|<builtin><newline><scenebody>
 
 <identifier>   ::= <identchar>|<identchar><identifier>
+<blockId>	   ::= <blockcall>.<blockId>|<identifier>
 <builtin>      ::= <listen>|<set>
 
-<listen>       ::= listen <keymap> <identifier>
+<listen>       ::= listen <keymap> <andClause> <identifier>|listen <keymap> <andClause> <blockId>
 <keymap>       ::= KEY_DOWN_ARROW|KEY_UP_ARROW|KEY_RIGHT_ARROW|KEY_LEFT_ARROW|KEY_ENTER|KEY_LEFT_SHIFT
+<andClause>	   ::= <empty>|and <identifier> <andClause>
 
-<set>          ::= set <identifier> <literal>
+<set>          ::= set <identifier> <literal>|setBackGround <indentifier>|setFloorlevel 
 
 <literal>      ::= <qstring>|<int>
 
@@ -27,7 +34,7 @@
 
 <setValue>	   ::= <variable> <int>
 
-<asClause>	   ::= as <identtifier>
+<asClause>	   ::= as <identifier>
 
 <variables>	   ::= <identifier>, <variables>|<identifier>[], <variables>|<empty>
 
@@ -40,5 +47,12 @@
 <export>	   ::= export <identifier>
 
 <block>		   ::= block <identifier>[<variables>] <stmts> end block
+<stmts>		   ::= <block><stmts>|<action><stmts>|<event><stmts>|<inherit><stmts>|<set><stmts>|<onClause><stmts>|<newline>
+<inherit>	   ::= inherit <blockcall><newline><inherit>| inherit <blockcall><newline>
+<blockcall>	   ::= <identifier>[]
 
-<stmts>		   ::= 
+<run>		   ::= run <event>
+
+<if-cond>	   ::= if(<collide>)<stmts> end if
+<collide>	   ::= <action> collide <action>
+<onClause>	   ::= <action> on <action>

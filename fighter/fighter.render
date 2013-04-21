@@ -17,8 +17,14 @@ action hit
 end action
 
 block dummy[]
-	output(collapse(gDummy1, gDummy2, gDummy)):
+	action stand
+		output(collapse(gDummy1, gDummy2, gDummy)):
+	end action
 end block
+
+event menu
+	output(menu):
+end event
 
 block moves[]
 

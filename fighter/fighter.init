@@ -1,3 +1,4 @@
+loadSprite "./fighter_logo.png" as menu
 loadSprite "./airKick (1).png" as airKick1
 loadSprite "./airKick (2).png" as airKick2
 loadSprite "./airPunch (1).png" as airPunch1

@@ -4,8 +4,8 @@ scene game
 end scene
 
 scene game
-	setValue playerHit1 0
-	setValue playerHealth1 100
+	set playerHit1 0
+	set playerHealth1 100
 	setBackGround cityScape
 	setFloorlevel 25
 	listen KEY_Z player1[].punch
@@ -23,8 +23,8 @@ scene game
 	listen KEY_LEFT_ARROW player1[].runBack
 	listen KEY_LEFT_SHIFT player1[].moves
 	
-	if(player1[].moves[] collide dummy[])
-		setValue playerHit1 +1
+	if(player1[].moves[].* collide dummy[].stand)
+		set playerHit1 +1
 		hit on dummy[]
 	end if
 	

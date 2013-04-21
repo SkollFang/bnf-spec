@@ -27,7 +27,7 @@ action Killed
 end action
 
 event menu
-    display menu
+    output(menu):
 end event
 
 event game_lost
