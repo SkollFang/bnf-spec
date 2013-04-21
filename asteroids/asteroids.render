@@ -11,11 +11,14 @@ action populate
     place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with asteroids
 end action
 
+action placeShip
+	place(ship, WINDOW_WIDTH/2, WINDOW_HEIGHT/2)
+end action
+
 event menu
     display menu
 end event
 
 event game_lost
     clear
-
 end event
