@@ -1,0 +1,20 @@
+<scene>        ::= scene <identifier><newline><scenebody><newline>end scene
+<scenebody>    ::= <newline>|<builtin><newline><scenebody>
+
+<identifier>   ::= <identchar>|<identchar><identifier>
+<builtin>      ::= <listen>|<set>
+
+<listen>       ::= listen <keymap> <identifier>
+<keymap>       ::= KEY_DOWN_ARROW|KEY_UP_ARROW|KEY_RIGHT_ARROW|KEY_LEFT_ARROW|KEY_ENTER
+
+<set>          ::= set <identifier> <literal>
+
+<literal>      ::= <qstring>|<int>
+
+<qstring>      ::= "<string>"
+<string>       ::= <alphachar>|<alphachar><string>
+<alphachar>    ::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
+<identchar>    ::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|_
+
+<unsigned-int> ::= 0|1|2|3|4|5|6|7|8|9
+<int>          ::= <unsigned-int>|-<unsigned-int>|+<unsigned-int>
