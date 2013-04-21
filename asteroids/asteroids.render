@@ -6,7 +6,7 @@ action turn angle
     rotate(ship, angle)
 end action
 
-action populate number
+action populate
     set 10 asteroids with asteroid
     place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with asteroids
 end action
