@@ -6,10 +6,15 @@ action turn angle
     rotate(ship, angle)
 end action
 
+action placeShip
+	place(ship, WINDOW_WIDTH/2, WINDOW_HEIGHT/2)
+endShip
+
 action populate number
     set 10 asteroids with asteroid
     place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with asteroids
 end action
+
 
 event menu
     display menu

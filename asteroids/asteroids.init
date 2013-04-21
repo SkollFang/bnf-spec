@@ -1,5 +1,7 @@
 loadSprite "./asteroid.png" as asteroid
+loadSprite "./SpaceShip.png" as ship
 loadSprite "./menu.png" as menu
 
+create lives 3
 create score 0
 export score
