@@ -3,6 +3,7 @@ Keywords and contexts
 
 game.init
 ---------
+- `create <name>`
 - `as <name>`
 - `set <array>`
 - `to <index> <array>`
