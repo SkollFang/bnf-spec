@@ -3,33 +3,13 @@ PAL-J
 
 A small Domain Specific Language designed for entry level programming of simple graphical games.
 
-Language Attributes
--------------------
-- similar to graphical interface used in android applications
-- based off self graphical, java implementation
-- strengthes and weaknesses:
-	-similiar to self
-	-easy readability
-	-long painful writability
-- simple syntax
-- semantics: java or simpler
-- BNF: methods, declarations, types, looping, terminator, 
-- if-else problem(deterministic else): default java-case
-- classes/objects: blocking implementation
-- blocked programming implementation, recongized by key words
-- expressions: conditional
-- call by reference
-- return by function declaration
+PAL-J programs consist of three files, one for asset loading and initialization of persistent variables (game.init), one describing rendering functions (game.render, with access to the program canvas) and lastly, a control file (game.tick) containing the entry point and `scene`'s that listen for input and take action.
 
-Data Structures
----------------
-- Arrays
-
-Reference
----------
-See ./Reference.md
+See ./Reference.md for a high level overview of keywords and contexts, and ./PAL-J.bnf for a formal language specification.
 
 Examples
 --------
 - Asteroids (./asteroids)
+- Fighter (./fighter)
+
 
