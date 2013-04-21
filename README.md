@@ -15,9 +15,9 @@ Language Attributes
 - semantics: java or simpler
 - BNF: methods, declarations, types, looping, terminator, 
 - if-else problem(deterministic else): default java-case
-- classes/objects: windows intergrating
-- blocked programming implementation, recongized by brackets
-- expressions: conditional, class instance
+- classes/objects: blocking implementation
+- blocked programming implementation, recongized by key words
+- expressions: conditional
 - call by reference
 - return by function declaration
 

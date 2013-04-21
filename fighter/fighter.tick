@@ -1,6 +1,6 @@
 scene game
-	set playerHit1 0
-	set playerHealth1 100
+	setValue playerHit1 0
+	setValue playerHealth1 100
 	setBackGround cityScape
 	setFloorlevel 25
 	listen KEY_Z player1[].punch

@@ -1,63 +1,63 @@
 block player1 []
 
 	action airKick
-		collapse(airKick1, airKick2):
+		output(collapse(airKick1, airKick2)):
 	end action
 
 	action airPunch
-		collapse(airPunch1,airPunch2):
+		output(collapse(airPunch1,airPunch2)):
 	end action
 
 	action highKick
-		collapse(highKick1, highKick2):
+		output(collapse(highKick1, highKick2)):
 	end action
 
 	action highPunch
-		collapse(highPunch1, highPunch2, highPunch3, highPunch4, highPunch5):
+		output(collapse(highPunch1, highPunch2, highPunch3, highPunch4, highPunch5)):
 	end action
 
 	action jumpKick
-		collapse(jumpKick1, jumpKick2, jumpKick3):
+		output(collapse(jumpKick1, jumpKick2, jumpKick3)):
 	end action
 
 	action kick
-		collapse(kick1, kick2):
+		output(collapse(kick1, kick2)):
 	end action
 
 	action powerTaunt
-		collapse(powerTaunt1, powerTaunt2, powerTaunt3):
+		output(collapse(powerTaunt1, powerTaunt2, powerTaunt3)):
 	end action
 
 	action punch
-		collapse(punch1, punch2, punch3, punch4, punch5, punch6, punch7):
+		output(collapse(punch1, punch2, punch3, punch4, punch5, punch6, punch7)):
 	end action
 
 	action sHighP
-		collapse(sHighP1, sHighP2, sHighP3, sHighP4):
+		output(collapse(sHighP1, sHighP2, sHighP3, sHighP4)):
 	end action
 
 	action sPunch
-		collapse(sPunch1, sPunch2, sPunch3, sPunch4):
+		output(collapse(sPunch1, sPunch2, sPunch3, sPunch4)):
 	end action
 
 	action standby
-		collapse(standby1, standby2, standby3):
+		output(collapse(standby1, standby2, standby3)):
 	end action
 
 	action taunt
-		collapse(taunt1, taunt2, taunt3):
+		output(collapse(taunt1, taunt2, taunt3)):
 	end action
 
 	action uppercut
-		collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7):
+		output(collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7)):
 	end action
 	
 	action runBack
-		collapse(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11):
+		output(collapse(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11)):
 	end action
 	
 	action runForward
-		collapseFlip(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11):
+		output(collapseFlip(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11)):
 	end action
 
 	event hit1
