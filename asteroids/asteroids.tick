@@ -1,6 +1,6 @@
 scene asteroids
     run menu
-    listen KEY_ENTER start game
+    listen KEY_ENTER game
 end scene
 
 scene game

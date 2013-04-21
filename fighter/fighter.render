@@ -1,4 +1,26 @@
-block player1 []
+block player1 [moves[]]
+
+	inherit moves[]
+
+	event hit1
+		playerHit1++
+	end event
+
+	event damage1
+		playerHealth1 = playerHealth1 - 10
+	end event
+
+end block
+
+action hit
+	output(collapse(hitContact1, hitContact2, hitContact3)):
+end action
+
+block dummy[]
+	output(collapse(gDummy1, gDummy2, gDummy)):
+end block
+
+block moves[]
 
 	action airKick
 		output(collapse(airKick1, airKick2)):
@@ -51,21 +73,13 @@ block player1 []
 	action uppercut
 		output(collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7)):
 	end action
-	
+
 	action runBack
 		output(collapse(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11)):
 	end action
-	
+
 	action runForward
 		output(collapseFlip(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11)):
 	end action
-
-	event hit1
-		playerHit1++
-	end event
-
-	event damage1
-		playerHealth1 = playerHealth1 - 10
-	end event
-
+	
 end block

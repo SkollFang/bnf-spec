@@ -56,6 +56,12 @@ loadSprite "./runBack (8).png" as runBack8
 loadSprite "./runBack (9).png" as runBack9
 loadSprite "./runBack (10).png" as runBack10
 loadSprite "./runBack (11).png" as runBack11
+loadSprite "./hitContact (1).png" as hitContact1
+loadSprite "./hitContact (2).png" as hitContact2
+loadSprite "./hitContact (3).png" as hitContact3
+loadSprite "./groundDummy (1).png" as gDummy1
+loadSprite "./groundDummy (2).png" as gDummy2
+loadSprite "./groundDummy (3).png" as gDummy3
 loadBackground "./post-apocalyptic_city.png" as cityScape
 
 create playerHit1 0
