@@ -4,7 +4,7 @@ scene asteroids
 end scene
 
 scene game
-    set score 0
+    setValue score 0
     run populate
     listen KEY_RIGHT_ARROW turn 10
     listen KEY_LEFT_ARROW turn -10
