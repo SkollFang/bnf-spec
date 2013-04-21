@@ -11,16 +11,34 @@
 <builtin>      ::= <listen>|<set>
 
 <listen>       ::= listen <keymap> <identifier>
-<keymap>       ::= KEY_DOWN_ARROW|KEY_UP_ARROW|KEY_RIGHT_ARROW|KEY_LEFT_ARROW|KEY_ENTER
+<keymap>       ::= KEY_DOWN_ARROW|KEY_UP_ARROW|KEY_RIGHT_ARROW|KEY_LEFT_ARROW|KEY_ENTER|KEY_LEFT_SHIFT
 
 <set>          ::= set <identifier> <literal>
 
 <literal>      ::= <qstring>|<int>
 
-<qstring>      ::= "<string>"|'<string'
+<qstring>      ::= "<string>"|'<string>'
 <string>       ::= <alphachar>|<alphachar><string>
 <alphachar>    ::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
 <identchar>    ::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|_
 
 <unsigned-int> ::= 0|1|2|3|4|5|6|7|8|9
 <int>          ::= <unsigned-int>|-<unsigned-int>|+<unsigned-int>
+
+<setValue>	   ::= <variable> <int>
+
+<asClause>	   ::= as <identtifier>
+
+<variables>	   ::= <identifier>, <variables>|<identifier>[], <variables>|<empty>
+
+<load>		   ::= loadSprite <qstring> <asClause>|
+					loadGif <qstring> <asClause>|
+					loadSound <qstring> <asClause>|
+					loadVideo <qstring> <asClause>|
+					loadBackground <qstring> <asClause>
+					
+<export>	   ::= export <identifier>
+
+<block>		   ::= block <identifier>[<variables>] <stmts> end block
+
+<stmts>		   ::= 
