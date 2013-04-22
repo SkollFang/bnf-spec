@@ -53,7 +53,7 @@
 
 <run>		   ::= run <event>
 
-<if-cond>	   ::= if(<collide>|<exp>)<stmts> end if
+<if-cond>	   ::= if(<exp>)<stmts> end if
 <collide>	   ::= <action> collide <action>
 <onClause>	   ::= <action> on <action>
 <exp>		   ::= <identifier><compare><identifier>|
@@ -61,7 +61,7 @@
 					<literal><compare> <indentifier>|
 					<literal><compare><literal>
 
-<place>		   ::= place(<collapse>|<identifier>, <int>, <int>)
-<move>		   ::= move(<collapse>|<identifier>, <int>, <int>)
+<place>		   ::= place(<identifier>, <int>, <int>)
+<move>		   ::= move(<identifier>, <int>, <int>)
 
 <compare>	   ::= == | < | > | != | <= | >=
