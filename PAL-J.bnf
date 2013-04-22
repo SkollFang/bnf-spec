@@ -10,8 +10,6 @@
 <collapse>	   ::= collapse(<colbody>)
 <colbody>	   ::= <identifier>, <colbady>|<identifier>|<empty> 
 
-<scenebody>    ::= <newline>|<builtin><newline><scenebody>
-
 <identifier>   ::= <identchar>|<identchar><identifier>
 <blockId>	   ::= <blockcall>.<blockId>|<identifier>
 <builtin>      ::= <listen>|<set>
