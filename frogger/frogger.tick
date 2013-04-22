@@ -11,5 +11,14 @@ scene game
     listen KEY_LEFT_ARROW turnLeft
     listen KEY_UP_ARROW goUp
     listen KEY_DOWN_ARROW goDown
+	
+	if (frogger collide placeCars)
+		set lives -1
+		if(lives == -1)
+			reset
+		end if
+	end if
+	
+end event 
 end scene
 
