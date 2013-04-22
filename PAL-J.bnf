@@ -6,7 +6,7 @@
 <values>	   ::= <literal> <values>|<literal>
 
 <actionbody>   ::= <newline>|<output><newline><actionbody>
-<output>	   ::= output(<collapse>|<identifier>):
+<output>	   ::= output(<collapse>|<identifier>|<place>):
 <collapse>	   ::= collapse(<colbody>)
 <colbody>	   ::= <identifier>, <colbady>|<identifier>|<empty> 
 
@@ -53,6 +53,14 @@
 
 <run>		   ::= run <event>
 
-<if-cond>	   ::= if(<collide>)<stmts> end if
+<if-cond>	   ::= if(<collide>|<exp>)<stmts> end if
 <collide>	   ::= <action> collide <action>
 <onClause>	   ::= <action> on <action>
+<exp>		   ::= <identifier><compare><identifier>|
+					<identifier><compare><literal>|
+					<literal><compare> <indentifier>|
+					<literal><compare><literal>
+
+<place>		   ::= place(<collapse>|<identifier>, <currentX>, <currentY>)
+
+<compare>	   ::= == | < | > | != | <= | >=

@@ -1,29 +1,18 @@
 action thrust power
-    move(ship, power, 0)
+    output(move(ship, power, 0)):
 end action
 
 action turn angle
-    rotate(ship, angle)
+    output(rotate(ship, angle)):
 end action
 
 action populate
     set 10 asteroids with asteroid
-    place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with asteroids
+    output(place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with asteroids):
 end action
 
 action placeShip
-	place(ship, WINDOW_WIDTH/2, WINDOW_HEIGHT/2)
-end action
-
-action Killed
-	if(ship(x,y) == aseroid(x,y))
-	{
-		lives--
-	}
-	if(lives == -1)
-	{
-		call game_lost
-	}
+	output(place(ship, WINDOW_WIDTH/2, WINDOW_HEIGHT/2)):
 end action
 
 event menu

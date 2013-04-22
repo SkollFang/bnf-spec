@@ -8,20 +8,23 @@ scene game
 	set playerHealth1 100
 	setBackGround cityScape
 	setFloorlevel 25
+	player1[].standby
 	listen KEY_Z player1[].punch
 	listen KEY_X player1[].kick
 	listen KEY_UP_ARROW and KEY_Z player1[].highPunch
 	listen KEY_UP_ARROW and KEY_X player1[].highKick
-	listen KEY_SPACE delay KEY_X player1[].airKick
-	listen KEY_SPACE delay KEY_Z player1[].airPunch
-	listen KEY_SPACE and KEY_X player1[].jumpKick
+	listen KEY_SPACE delay KEY_X player1[].airKick +0 +5
+	listen KEY_SPACE delay KEY_Z player1[].airPunch +0 +5
+	listen KEY_SPACE and KEY_X player1[].jumpKick +0 +5
 	listen KEY_UP_ARROW and KEY_Z during player1[].highPunch player1[].sHighPunch
 	listen KEY_Z during player1[].punch player1[].sPunch
-	listen NO_INPUT player1[].standby
-	listen KEY_Z and KEY_SPACE and KEY_UP_ARROW player1[].uppercut
-	listen KEY_RIGHT_ARROW player1[].runForward
-	listen KEY_LEFT_ARROW player1[].runBack
-	listen KEY_LEFT_SHIFT player1[].moves
+	listen NO_INPUT player1[].ready
+	listen KEY_Z and KEY_SPACE and KEY_UP_ARROW player1[].uppercut +0 +5
+	listen KEY_RIGHT_ARROW player1[].runForward +5 +0
+	listen KEY_LEFT_ARROW player1[].runBack -5 +0
+	listen KEY_SPACE player1[].jump +0 +5
+	listen KEY_LEFT_SHIFT player1[].taunt
+	listen KEY_LEFT_SHIFT player1[].powerTaunt
 	
 	if(player1[].moves[].* collide dummy[].stand)
 		set playerHit1 +1

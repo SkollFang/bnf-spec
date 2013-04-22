@@ -2,6 +2,10 @@ block player1 [moves[]]
 
 	inherit moves[]
 
+	action placeFighter1
+		output(place(standby, WINDOW_WIDTH/2, setFloorlevel)):
+	end action
+	
 	event hit1
 		playerHit1++
 	end event
@@ -28,12 +32,20 @@ end event
 
 block moves[]
 
+	action jump
+		output(place(collapse(jump1, jump2, jump3, jump4, jump5, jump6, jump7, jump8, jump9) x y)):
+	end action
+
+	action ready
+		output(collapse(ready1, ready2, ready3, ready4, ready5, ready6)):
+	end action
+	
 	action airKick
-		output(collapse(airKick1, airKick2)):
+		output(place(collapse(airKick1, airKick2) x y)):
 	end action
 
 	action airPunch
-		output(collapse(airPunch1,airPunch2)):
+		output(place(collapse(airPunch1,airPunch2) x y)):
 	end action
 
 	action highKick
@@ -45,7 +57,7 @@ block moves[]
 	end action
 
 	action jumpKick
-		output(collapse(jumpKick1, jumpKick2, jumpKick3)):
+		output(place(collapse(jumpKick1, jumpKick2, jumpKick3) x y)):
 	end action
 
 	action kick
@@ -77,15 +89,15 @@ block moves[]
 	end action
 
 	action uppercut
-		output(collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7)):
+		output(place(collapse(uppercut1, uppercut2, uppercut3, uppercut4, uppercut5, uppercut6, uppercut7) x y)):
 	end action
 
 	action runBack
-		output(collapse(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11)):
+		output(place(collapse(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11) x y)):
 	end action
 
-	action runForward
-		output(collapseFlip(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11)):
+	action runForward 
+		output(place(collapseFlip(runBack1, runBack2, runBack3, runBack4, runBack5, runBack6, runBack7, runBack8, runBack9, runBack10, runBack11) x y)):
 	end action
 	
 end block
