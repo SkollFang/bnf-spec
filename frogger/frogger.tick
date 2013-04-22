@@ -1,0 +1,15 @@
+scene frogger_game
+    run menu
+    listen KEY_ENTER game
+end scene
+
+scene game
+    setValue score 0
+    run background
+	run placeCars
+    listen KEY_RIGHT_ARROW turnRight
+    listen KEY_LEFT_ARROW turnLeft
+    listen KEY_UP_ARROW goUp
+    listen KEY_DOWN_ARROW goDown
+end scene
+

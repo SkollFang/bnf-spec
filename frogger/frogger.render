@@ -1,0 +1,47 @@
+action placeFrogger
+	place(frogger, WINDOW_WIDTH/2, 1)
+end action
+
+action goLeft
+	move(frogger, -1, 0)
+end action
+
+action goRight
+	move(frogger, 1, 0)
+end action
+
+action goUp
+	move(frogger, 1, 0)
+end action
+
+action goDown
+	move(frogger, -1, 0)
+end action 
+
+action placeCars
+	set 10 cars with cars
+    place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with cars
+end action
+
+action killed
+	if(frogger(x,y) == car(x,y))
+	{
+		lives--
+	}
+	if(lives == -1)
+	{
+		call game_lost
+	}
+end action
+
+event menu
+    display menu
+end event
+
+event background
+	display background
+end event
+
+event game_lost
+    clear
+end event

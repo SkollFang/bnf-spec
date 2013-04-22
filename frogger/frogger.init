@@ -1,0 +1,9 @@
+loadBackground "./frogger_background1.png as background
+loadSprite "./frogger.png as frogger
+loadSprite "./car.png as car
+loadSprite "./frogger_mainmenu.png as menu
+
+
+create lives 3
+create score 0
+export score
