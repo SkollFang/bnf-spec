@@ -61,6 +61,7 @@
 					<literal><compare> <indentifier>|
 					<literal><compare><literal>
 
-<place>		   ::= place(<collapse>|<identifier>, <currentX>, <currentY>)
+<place>		   ::= place(<collapse>|<identifier>, <int>, <int>)
+<move>		   ::= move(<collapse>|<identifier>, <int>, <int>)
 
 <compare>	   ::= == | < | > | != | <= | >=
