@@ -23,17 +23,6 @@ action placeCars
     place(each, rand(WINDOW_WIDTH), rand(WINDOW_HEIGHT)) with cars
 end action
 
-action killed
-	if(frogger(x,y) == car(x,y))
-	{
-		lives--
-	}
-	if(lives == -1)
-	{
-		call game_lost
-	}
-end action
-
 event menu
     display menu
 end event
