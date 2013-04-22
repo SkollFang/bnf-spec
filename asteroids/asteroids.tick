@@ -19,6 +19,7 @@ scene game
 			reset
 		end if
 	end if
+
+    set score +1
 	
 end event
-end scene
